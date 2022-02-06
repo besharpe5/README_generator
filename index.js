@@ -56,7 +56,7 @@ const questions = () => {
     },
     {
         type: 'list',
-        name: 'licenses',
+        name: 'license',
         message: 'Select which type of license you would like to give your project.',
         choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC License'],
     },
@@ -74,7 +74,7 @@ const questions = () => {
     },
     {
         type: 'input',
-        name: 'contribution-guidelines',
+        name: 'contribution',
         message: 'What are your contribution guidelines?'
     },
     {
