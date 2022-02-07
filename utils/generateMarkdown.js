@@ -54,7 +54,7 @@ function generateMarkdown(userDataInput) {
   * [Tests](#tests)
   * [Questions](#questions)
   
-  ##Instalations
+  ## Instalations
   ${data.installation}
 
   ## License
