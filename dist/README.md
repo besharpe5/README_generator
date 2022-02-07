@@ -13,7 +13,7 @@
   * [Tests](#tests)
   * [Questions](#questions)
   
-  ##Instalations
+  ## Instalations
   NA
 
   ## License

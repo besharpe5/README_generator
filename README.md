@@ -1,7 +1,7 @@
 
   # README Generator
   
-        ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+        [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)]
     
   ## Description
   A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer.js package.
