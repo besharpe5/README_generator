@@ -139,8 +139,8 @@ questions()
  .then(newREADMEFile => {
    return writeFile(newREADMEFile);
  })
- .then(writeFileResponse => {
-   console.log(writeFileResponse.message);
+ .then(writeFileInput => {
+   console.log(writeFileInput.message);
  })
  .catch(err => {
    console.log(err);

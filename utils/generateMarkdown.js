@@ -1,14 +1,11 @@
 // creates a function that returns a license badge based on which license is passed in
 // if there is no license, it returns an empty string
-const renderLicenseBadge = licenseBadge => {
-    if (!licenseBadge) {
-        return '';
+function renderLicenseBadge(license) {
+    if(license !== '') {
+      return `[![License](https://img.shields.io/badge/license-${license}-brightgreen.svg)]`
     }
-
-    return `
-        ![License](https://img.shields.io/badge/License-${licenseBadge.split(' ').join(' ')}-brightgreen.svg)
-    `;
-};
+    return '';
+  };
 
 // creates a function that returns the license link
 // if there is no license, return an empty string
@@ -74,7 +71,7 @@ function generateMarkdown(userDataInput) {
   ${data.tests}
 
   ## Questions
-  Feel free to contact me directly at ${data.email}. If you would like to see more of my work, you can do so via https://github.com/${data.username}.
+  Feel free to contact me directly at ${data.email}. If you would like to see more of my work, feel free to visit my GitHub at https://github.com/${data.username}.
 `;
 };
 

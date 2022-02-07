@@ -1,9 +1,7 @@
 
   # NA
  
-  
-        ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
-    
+  [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)]
   ## Description
   NA
 
@@ -32,4 +30,4 @@
   NA
 
   ## Questions
-  Feel free to contact me directly at NA. If you would like to see more of my work, you can do so via https://github.com/NA.
+  Feel free to contact me directly at NA. If you would like to see more of my work, feel free to visit my GitHub at https://github.com/NA.
