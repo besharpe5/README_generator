@@ -7,7 +7,11 @@
   A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer.js package.
 
   ## Walkthrough 
-  
+
+
+https://user-images.githubusercontent.com/92644802/152719885-100d6a5c-0def-47a7-a2b0-b7bee353f30b.mp4
+
+
 
   ## Table of Contents
   * [Installation](#installation)
