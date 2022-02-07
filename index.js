@@ -96,23 +96,6 @@ const questions = () => {
     },
     ])
 };
-const startPrompt = () => {
-    console.log(`
-          ===============================
-             Create a Professional README
-          ===============================
-          `);
-
-    inquirer
-      .prompt(questions)
-      .then((data) => {
-        writeFile("README.md", generateMarkdown(data));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
 
 // creates a function to write README file
 const writeFile = fileContent => {
@@ -131,7 +114,7 @@ const writeFile = fileContent => {
     });
   };
 
-// function call to initialize app
+// function to initialize app
 questions()
   .then(data => {
    return generateMarkdown(data);

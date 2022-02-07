@@ -58,8 +58,9 @@ function generateMarkdown(userDataInput) {
   ${data.installation}
 
   ## License
-  ${renderLicenseLink(license)}
   ${renderLicenseSection(license)}
+  ${renderLicenseLink(license)}
+  
 
   ## Usage
   ${data.usage}
