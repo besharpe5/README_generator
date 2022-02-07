@@ -25,8 +25,8 @@ https://user-images.githubusercontent.com/92644802/152719885-100d6a5c-0def-47a7-
   1). npm install 2). npm install inquirer
 
   ## License
-  https://opensource.org/licenses/MIT
   Licensed under MIT
+  https://opensource.org/licenses/MIT
 
   ## Usage
   Just a simple to use command-line application that quickly generates a README.md file from user input.
