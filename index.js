@@ -5,7 +5,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // creates an array of questions for user input
 const questions = () => {
-    return inquirer.prompt([
+    return inquirer.prompt ([
     {
         type: 'input',
         name: 'username',
@@ -93,15 +93,55 @@ const questions = () => {
                 console.log('Please include any additional information required to use this repository.');
             }
         },
-    }
+    },
     ])
 };
+const startPrompt = () => {
+    console.log(`
+          ===============================
+             Create a Professional README
+          ===============================
+          `);
+
+    inquirer
+      .prompt(questions)
+      .then((data) => {
+        writeFile("README.md", generateMarkdown(data));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
 
 // creates a function to write README file
-function writeToFile(fileName, data) {}
-
-// creates a function to initialize app
-function init() {}
+const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+      fs.writeFile('./dist/README.md', fileContent, err => {
+        if (err) {
+          reject(err);
+          return;
+        }
+    
+        resolve({
+          ok: true,
+          message: 'Congrats! README.md was successfully generated.'
+        });
+      });
+    });
+  };
 
 // function call to initialize app
-init();
+questions()
+  .then(data => {
+   return generateMarkdown(data);
+ })
+ .then(newREADMEFile => {
+   return writeFile(newREADMEFile);
+ })
+ .then(writeFileResponse => {
+   console.log(writeFileResponse.message);
+ })
+ .catch(err => {
+   console.log(err);
+ });
